@@ -1,0 +1,2 @@
+# jeku
+jeku = jekyll + haiku

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jeku | {{ page.date | date: '%B %d, %Y' }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    {% if page.google_font %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family={{ page.google_font.url }}" rel="stylesheet">
+    {% endif %}
+
+    <style type="text/css">
+    #content {
+      {% if page.google_font %}
+        font-family: {{ page.google_font.name }};
+      {% endif %}
+      {% if page.color %}
+        color: {{ page.color }};
+      {% endif %}
+      {% if page.background-color %}
+        background-color: {{ page.background-color }};
+      {% endif %}
+    }
+    </style>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>

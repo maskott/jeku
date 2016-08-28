@@ -8,10 +8,10 @@ layout: master
 <div id="footer">
   <div class="PageNavigation">
     {% if page.previous.url %}
-      <a class="prev" href="{{page.previous.url}}">&laquo; back</a>
+      <a class="prev" href="{{ site.github.url }}{{page.previous.url}}">&laquo; back</a>
     {% endif %}
     {% if page.next.url %}
-      <a class="next" href="{{page.next.url}}">next &raquo;</a>
+      <a class="next" href="{{ site.github.url }}{{page.next.url}}">next &raquo;</a>
     {% endif %}
   </div>
 </div>

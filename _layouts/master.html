@@ -4,9 +4,11 @@
     <title>Jeku | {{ page.date | date: '%B %d, %Y' }}</title>
     <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/css/main.css">
 
-    {% if page.google_font %}
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family={{ page.google_font.url }}" rel="stylesheet">
+    {% if page.google_font %}
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|{{ page.google_font.url }}" rel="stylesheet">
+    {% else %}
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
     {% endif %}
 
     <style type="text/css">
